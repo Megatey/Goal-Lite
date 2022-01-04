@@ -32,12 +32,20 @@ const HomePage = () => {
             setSelectVideo(video)
             console.log(selectVideo);
             setLoading(true)
+            scrollToTop();
             
         }
 
         useEffect(() => {
             selectVideo && setLoading(false)
         }, [selectVideo])
+
+        const scrollToTop = () => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          };
         
     return (
         <div className="home">
@@ -81,7 +89,7 @@ const HomePage = () => {
                                     ))
                                 }
                             </div>
-                            
+                            {/* <button onClick={scrollToTop}>Click</button> */}
                         </div>
                 </div>
 
