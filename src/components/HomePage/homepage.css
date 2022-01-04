@@ -1,0 +1,221 @@
+.home {
+    max-width: 100%;
+    height: auto;
+    background-color: blue;
+}
+
+.header {
+    max-width: 100%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.site-name {
+    flex: 1;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px black;
+}
+
+.header-text {
+    flex: 2;
+}
+
+.body {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.display-container{
+    max-width: 100%;
+    height: 270px;
+    background-image: url('C:\Users\23481\Desktop\codeFolder\matchHighlight\goals-highlights\public\allianz-arena-1226963.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px;
+}
+
+.video-container {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-image: url('C:\Users\23481\Desktop\codeFolder\matchHighlight\goals-highlights\public\guys-at-soccer-match-1540702.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px;
+}
+
+.select-container {
+    max-width: 100%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.option-selection {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+select {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: inherit;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+option {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    cursor: pointer;
+
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: inherit;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.results-matches {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    row-gap: 20px;
+    column-gap: 10px;
+    box-sizing: border-box;
+}
+
+.info-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info-container:hover {
+    border: 1px solid #fff;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.thumb-nail {
+   width: 100%;
+   height: 100%;
+
+}
+
+.info-details {
+    flex: 2;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-details p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.match-date {
+    margin-top: 5px;
+}
+
+.loading {
+    color: blue;
+    animation-name: loading;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+@media screen and (min-width: 800px) {
+   .site-name {
+       flex: 0.7;
+   }
+
+   .header-text {
+       flex: 1;
+   }
+
+   .body {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        }
+
+        .display-container {
+            width: 100%;
+            height: 350px;
+            position: sticky;
+            top: 60px;
+        }
+
+        .video-container {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background-color: green;
+        }
+
+        /* .results-matches {
+            
+        } */
+
+
+
+
+
+
+
+
+}
