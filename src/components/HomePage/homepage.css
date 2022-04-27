@@ -1,0 +1,48 @@
+h2 {
+    color:#fff;
+    padding: 10px;
+}
+
+.matches-list-container {
+    max-width: 100%;
+    height: 200px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.match-container {
+    min-width: 200px;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #3b3a4e;
+    cursor: pointer;
+}
+
+.image-container {
+    width: 100%;
+    height: 80%;
+}
+
+.image-container .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.title {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+.date {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bolder;
+}
