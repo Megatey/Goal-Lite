@@ -13,6 +13,16 @@ h2 {
     padding: 10px;
 }
 
+.matches-list-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.matches-list-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .match-container {
     min-width: 200px;
     height: 100%;
@@ -45,4 +55,95 @@ h2 {
     font-size: 12px;
     margin-top: 5px;
     font-weight: bolder;
+}
+
+.watch-match-container {
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: #130f40 !important;
+    position: fixed !important;
+    top: 50px !important;
+    opacity: 1;
+}
+
+.watch-match-container span {
+    font-size: 50px;
+    position: absolute;
+    font-weight: bolder;
+    top: 20px;
+    right: 3%;
+    color: #fff;
+    z-index: 999 !important;
+    cursor: pointer;
+}
+
+.content-container {
+    /* width: 50%; */
+    margin-top: 50%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3b3a4e;
+  border-bottom: 16px solid #3b3a4e;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: fixed; /* or absolute */
+  top: 50%;
+margin-top: -50px;
+margin-left: 100px;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+    @media only screen and (min-width: 768px) {
+
+    .match-container {
+        min-width: 400px;
+    }
+
+    .content-container {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .watch-match-container {
+         display: flex; 
+        flex-direction: column; 
+         align-items: center; 
+        justify-content: center;
+    }
+
+    .matches-list-container::-webkit-scrollbar {
+        display: scroll;
+    }
+    
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .matches-list-container {
+      scrollbar-width: thin;  /* Firefox */
+    }
+    
+
+    .loader {
+        position: fixed; /* or absolute */
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -100px;
+        width: 120px;
+        height: 120px;
+    }
+
 }
