@@ -87,14 +87,14 @@ h2 {
   border-radius: 50%;
   border-top: 16px solid #3b3a4e;
   border-bottom: 16px solid #3b3a4e;
-  width: 80px;
-  height: 80px;
+  width: 10px;
+  height: 10px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   position: fixed; /* or absolute */
   top: 50%;
 margin-top: -50px;
-margin-left: 100px;
+margin-left: 140px;
 }
 
 @-webkit-keyframes spin {
@@ -140,10 +140,10 @@ margin-left: 100px;
         position: fixed; /* or absolute */
         top: 50%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -100px;
-        width: 120px;
-        height: 120px;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 10px;
+        height: 10px;
     }
 
 }
