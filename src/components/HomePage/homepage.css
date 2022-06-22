@@ -13,15 +13,15 @@ h2 {
     padding: 10px;
 }
 
-.matches-list-container::-webkit-scrollbar {
-    display: none;
+/* .matches-list-container::-webkit-scrollbar {
+    display: block;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+
 .matches-list-container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+  -ms-overflow-style: 5px solid #f3f3f3;  
+  scrollbar-width: 5px solid #f3f3f3;  
+} */
 
 .match-container {
     min-width: 200px;
@@ -83,18 +83,18 @@ h2 {
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
+  border: 3px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3b3a4e;
-  border-bottom: 16px solid #3b3a4e;
-  width: 10px;
-  height: 10px;
+  border-top: 3px solid #3b3a4e;
+  border-bottom: 3px solid #3b3a4e;
+  width: 50px;
+  height: 50px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   position: fixed; /* or absolute */
   top: 50%;
 margin-top: -50px;
-margin-left: 140px;
+margin-left: 160px;
 }
 
 @-webkit-keyframes spin {
@@ -125,25 +125,22 @@ margin-left: 140px;
         justify-content: center;
     }
 
-    .matches-list-container::-webkit-scrollbar {
-        display: scroll;
-    }
-    
-    
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .matches-list-container {
-      scrollbar-width: thin;  /* Firefox */
-    }
     
 
     .loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #3b3a4e;
+  border-bottom: 3px solid #3b3a4e;
         position: fixed; /* or absolute */
         top: 50%;
-        left: 50%;
+        left: 45%;
         margin-top: 0px;
         margin-left: 0px;
-        width: 10px;
-        height: 10px;
+        width: 60px;
+        height: 60px;
     }
+
+    
 
 }
